@@ -334,3 +334,30 @@ header h1 {
     transform: translateY(0);
   }
 }
+
+.progress {
+  width: 50%;
+  margin: 0 auto;
+  height: 4px;
+  position: relative;
+  /* background-color: #6cb7f5; */
+}
+
+@keyframes progress-bar {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+.progress__current {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #5af59d;
+  animation: 20s linear progress-bar;
+}
