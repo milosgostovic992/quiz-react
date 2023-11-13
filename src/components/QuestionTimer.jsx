@@ -1,9 +1,9 @@
 import React from 'react'
 
-const QuestionTimer = ({handleSkipAnswer }) => {
+const QuestionTimer = ({onSkip, mode }) => {
   return (
     <div className="progress">
-        <div className="progress__current" onAnimationEnd={handleSkipAnswer}></div>
+        <div className="progress__current" onAnimationEnd={onSkip}></div>
     </div>
   )
 }

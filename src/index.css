@@ -359,5 +359,5 @@ header h1 {
   top: 0;
   left: 0;
   background-color: #5af59d;
-  animation: 20s linear progress-bar;
+  animation: 10s linear progress-bar;
 }
